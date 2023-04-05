@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<title>Animacje</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Witold Malinowski">
+<link rel="stylesheet" type="text/css" href="styl.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="stylesheet" type="text/css" href="animacja2.css">
+</head>
+
+<body>
+
+<header>
+Animacje
+</header>
+
+<div class="container">
+
+<div class="menu">
+
+<ul>
+<li><a href=".\">Start</a></li>
+<li><a href="anim1.html">Animacja 1</a></li>
+<li><a href="anim2.html">Animacja 2</a></li>
+<li><a href="anim3.html">Animacja 3</a></li>
+<li><a href="anim4.html">Animacja 4</a></li>
+</ul>
+
+<div class='listek-menu'>
+menu animacji
+</div>
+</div>
+
+<div class="animacje">
+<h1>animacja 2</h1>
+
+<div class="animacja2"></div>
+
+<div class="opis">
+<b>klasa obiektu:</b>
+<pre class="klasa-obiektu"><code>
+.animacja2 {
+    width:300px;
+    height:300px;
+    margin:10px auto;
+    background-color: hotpink;
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-name: animacja2;
+    animation-duration: 3s;
+} 
+</code></pre>
+<b>klatki animacji</b>
+<pre class="ramki"></code>
+@keyframes animacja2 {
+0% {background-color: pink; transform: scale(1);} 
+25% {background-color: rgb(0, 162, 255); transform: scale(0.5);}
+50% {background-color: rgb(0, 209, 209); transform: scale(0.5);}
+65% {background-color: cyan;}
+80% {background-color: rgb(0, 209, 209); transform: scale(1);}
+90% {background-color: rgb(0, 162, 255); transform: rotateX(0);}
+100% {background-color: pink; transform: rotateX(-180deg);}
+} 
+</code></pre>
+</div>
+
+</div>
+
+</div>
+ 
+<footer>
+David Żarnowiec
+</footer>
+</body>
+</html>

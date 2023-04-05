@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<title>Animacje</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Witold Malinowski">
+<link rel="stylesheet" type="text/css" href="styl.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="stylesheet" type="text/css" href="animacja3.css">
+</head>
+
+<body>
+
+<header>
+Animacje
+</header>
+
+<div class="container">
+
+<div class="menu">
+
+<ul>
+<li><a href=".\">Start</a></li>
+<li><a href="anim1.html">Animacja 1</a></li>
+<li><a href="anim2.html">Animacja 2</a></li>
+<li><a href="anim3.html">Animacja 3</a></li>
+<li><a href="anim4.html">Animacja 4</a></li>
+</ul>
+
+<div class='listek-menu'>
+menu animacji
+</div>
+</div>
+
+<div class="animacje">
+<h1>animacja 3</h1>
+
+<div class="animacja3"></div>
+
+<div class="opis">
+<b>klasa obiektu:</b>
+<pre class="klasa-obiektu"><code>
+.animacja3 {
+    width:300px;
+    height:300px;
+    margin:10px auto;
+    background-color:pink;
+    animation-iteration-count: infinite;
+    animation-name: animacja3;
+    animation-duration: 7s;
+}
+</code></pre>
+<b>klatki animacji</b>
+<pre class="ramki"></code>
+@keyframes animacja3 {
+0% {background-color:gold; transform: scale(0.4) rotateZ(0);}
+12.5% {background-color:orange; transform: scale(1) rotateZ(180deg);}
+25% {background-color:orangered; transform: scale(0.6) rotateZ(360deg);}
+37.5% {background-color:hotpink; transform: scale(1) rotateX(0);}
+50% {background-color:pink; transform: scale(0.5) rotateX(-90deg);}
+62.5% {background-color:hotpink; transform: scale(1) rotateX(-180deg);}
+75% {background-color:orangered; transform: scale(0.6) rotateZ(360deg);} 
+82.5% {background-color:orange; transform: scale(1) rotateZ(180deg);}
+100% {background-color: gold; transform: scale(0.4) rotateZ(0);}
+}
+</code></pre>
+</div>
+
+</div>
+
+</div>
+ 
+<footer>
+David Żarnowiec
+</footer>
+</body>
+</html>
